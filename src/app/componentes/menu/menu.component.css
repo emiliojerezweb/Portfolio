@@ -1,0 +1,30 @@
+.col{
+    padding:20px;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(230, 149, 74);
+    color: rgb(48, 48, 134)
+
+}
+
+p{
+   text-align: center;
+   justify-content: center;
+   padding-top:15px;
+   justify-items: center;
+   font-weight: bold;
+}
+.container-fluid{
+    justify-content: center;
+}
+
+#explaboral{
+    font-size: 15px ;
+}
+
+#capacitacion{
+    font-size:medium;
+}
+.container{
+    padding: auto;
+}

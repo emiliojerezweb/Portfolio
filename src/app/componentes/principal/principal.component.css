@@ -1,22 +1,10 @@
-nav{
+
+div{
+    color: aqua;
+    text-align: center;
+    justify-content: center;
+}
+
+body{
     background-color: coral;
 }
-
-.principal{
-    width:auto;
-    background-color: blue;
-    display: flex;
-    height:100%;
-
-}
-.secundaria{
-    width: 50%;
-    display: flex;
-    height: auto;
-    color:aliceblue;
-}
-.derecha{
-    width: 50%;
-    background-color: brown;
-}
-
