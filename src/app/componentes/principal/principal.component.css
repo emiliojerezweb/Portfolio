@@ -1,22 +1,44 @@
 .container{
     display: flex;
     height: auto;
-    flex-wrap: nowrap;
+    flex-wrap:wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0;
 }
 
 .inicio{
     width: 100%;
     height: 600px;
-    padding: 150px 100px;
 
-    background-image: url(../../../assets/montana.jpg);
+    background-image: url(../../../assets/principal.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
     text-align: center;
-    background-blend-mode: darken;
+    color:antiquewhite;
+    background-color: chocolate;
 }
+
+p{
+    text-align:start;
+    width: 450px;   
+    height: 100px;
+    padding-top: 80px;
+    padding-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: expanded;
+}
+
+h1{
+    text-align:start;
+    padding-top: 400px;
+    padding-left: 30px;
+    width: 300px;   
+    height: 100px;
+    tab-size: 50px;
+}
+
 
