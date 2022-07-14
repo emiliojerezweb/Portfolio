@@ -1,9 +1,4 @@
 
-.titulo{
-    font-weight: bold;
-    padding: 20px;
-    font-size: 2em;
-}
 
 .row{
     padding: 15px;
@@ -11,24 +6,20 @@
     padding:10px;
     margin: 5px;
     border-radius: 10px;
+    width: 80%;
 }
 
 h3{
     font-size: 20px;
     font-weight: bold;
 }
-h2{
-    padding: 20px;
-}
+
 img{
     width: 100%;
     height: auto;
 }
-.container{
-    background-color: azure;
-    padding: 0;
-}
+
 p{
-    text-align: center;
+    text-align: left;
 }
 

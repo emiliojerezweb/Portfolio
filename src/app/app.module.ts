@@ -8,6 +8,8 @@ import { MenuComponent } from './componentes/menu/menu.component';
 import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EstudiosComponent } from './componentes/estudios/estudios.component';
+import { CursosComponent } from './componentes/cursos/cursos.component';
+import { ContactoComponent } from './componentes/contacto/contacto.component';
 
 
 @NgModule({
@@ -18,6 +20,8 @@ import { EstudiosComponent } from './componentes/estudios/estudios.component';
     SobreMiComponent,
     ExperienciaComponent,
     EstudiosComponent,
+    CursosComponent,
+    ContactoComponent,
   ],
   imports: [
     BrowserModule,
