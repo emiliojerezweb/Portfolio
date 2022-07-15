@@ -17,9 +17,15 @@ h3{
 img{
     width: 100%;
     height: auto;
+    margin-right: 10px;
 }
 
-p{
-    text-align: left;
+
+.imgtitulo{
+    align-items: center;
+    text-align: center;
 }
 
+.imgtitulo p .estudio{
+    padding: 0%;
+}
