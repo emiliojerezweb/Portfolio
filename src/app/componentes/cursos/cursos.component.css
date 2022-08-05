@@ -1,7 +1,10 @@
 .container{
-    padding-top: 60px;
+    padding-top: 30px;
 }
 
 h2{
     padding-bottom: 30px;
+}
+li{
+    font-size: 30px;
 }

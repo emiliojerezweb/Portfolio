@@ -6,7 +6,6 @@
     padding:10px;
     margin: 5px;
     border-radius: 10px;
-    width: 80%;
 }
 
 h3{
@@ -17,6 +16,7 @@ h3{
 img{
     width: 100%;
     height: auto;
+    border-radius: 10%;
 }
 
 p{
