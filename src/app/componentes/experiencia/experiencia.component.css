@@ -1,9 +1,8 @@
 
 
 .row{
-    padding: 15px;
+    padding: 10px;
     border: solid 1px;
-    padding:10px;
     margin: 5px;
     border-radius: 10px;
 }
@@ -14,7 +13,7 @@ h3{
 }
 
 img{
-    width: 100%;
+    width: 100px;
     height: auto;
     border-radius: 10%;
 }
@@ -22,4 +21,3 @@ img{
 p{
     text-align: left;
 }
-

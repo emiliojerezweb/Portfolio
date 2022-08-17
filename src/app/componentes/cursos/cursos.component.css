@@ -1,5 +1,7 @@
 .container{
     padding-top: 30px;
+    width: 80%;
+    border: 10px;
 }
 
 h2{
@@ -7,4 +9,25 @@ h2{
 }
 li{
     font-size: 30px;
+}
+.carousel slide{
+    border: 20px;
+}
+.carousel-control-next{
+    color: black;
+
+}
+img{
+    width: 120px;
+    height: 300px;
+}
+
+.carousel-item{
+    border: solid 2px;
+    border-radius: 5%;
+}
+
+a{
+    font-size: 20px;
+    font-weight: bold;
 }

@@ -25,10 +25,16 @@ img{
 .imgtitulo{
     align-items: center;
     text-align: center;
+    width: 100px;
+    height: 100px;
 }
 
 .imgtitulo p .estudio{
     padding: 0%;
+}
+#estudio p {
+    font-size: 30px;
+    font-weight: bold;
 }
 
 
