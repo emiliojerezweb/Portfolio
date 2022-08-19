@@ -1,9 +1,12 @@
+import { Persona } from "./Persona";
+
 export class Experiencia {
    
     id: number;
     empresa: string;
     puesto: string;
     tarea: string;
-    fecha_ini: string;
-    fecha_fin: string;
+    fec_ini: string;
+    fec_fin: string;
+    id_persona: Persona;
 }

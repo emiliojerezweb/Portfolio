@@ -9,12 +9,12 @@ import { Persona } from '../modelos/Persona';
 })
 export class ServiciopersonaService {
 
-  private URL = "http://localhost:8080/portfolio";
+  private URL = 'http://localhost:8080';
 
   constructor(private http: HttpClient) { }
 
-  verPersona():Observable<Persona[]>{
-    return this.http.get<Persona[]>(`${this.URL}`);
+  verPersona():Observable<Persona[]> {
+    return this.http.get<Persona[]>(`${this.URL}/persona/todas`);
   }
 
   

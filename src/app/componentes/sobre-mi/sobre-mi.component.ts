@@ -11,7 +11,7 @@ import { ServiciopersonaService } from 'src/app/servicios/serviciopersona.servic
 })
 export class SobreMiComponent implements OnInit {
 
-  persona: Persona[];
+  personas: Persona[];
   constructor(private serviperso: ServiciopersonaService) { }
 
   ngOnInit(): void {
@@ -20,7 +20,9 @@ export class SobreMiComponent implements OnInit {
 
   private obtenerPersona(){
     this.serviperso.verPersona().subscribe(data => {
-      this.persona = data;
+      console.log(data);
+      this.personas = data;
+
       
       
 
