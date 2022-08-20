@@ -7,5 +7,6 @@ export class Estudios {
     lugar: string;
     ini_est: string;
     fin_est: string;
+    imagen: string;
     id_persona: Persona;
 }

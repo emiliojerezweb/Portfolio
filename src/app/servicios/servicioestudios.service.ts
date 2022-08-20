@@ -1,22 +1,20 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { Persona } from '../modelos/Persona';
-
+import { Estudios } from '../modelos/Estudios';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ServiciopersonaService {
+export class ServicioestudiosService {
 
   private URL = 'http://localhost:8080';
 
   constructor(private http: HttpClient) { }
-  
-  //Se recibe info de la persona.
-  verPersona():Observable<Persona[]> {
-    return this.http.get<Persona[]>(`${this.URL}/persona/todas`);
+
+  verEstudios(): Observable<Estudios[]>{
+
+    return this.http.get<Estudios[]>(`${this.URL}/estudio/ver/todos`);
   }
 
-  
 }

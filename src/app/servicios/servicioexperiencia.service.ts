@@ -9,11 +9,7 @@ import { Experiencia } from '../modelos/Experiencia'
 })
 export class ServicioexperienciaService {
 
-  private URL = "http://localhost:8080/portfolio"
 
   constructor(private http: HttpClient) { }
 
-  verExperiencia():Observable<Experiencia[]>{
-    return this.http.get<Experiencia[]>(`${this.URL}`+ '/experiencia');
-  }
 }

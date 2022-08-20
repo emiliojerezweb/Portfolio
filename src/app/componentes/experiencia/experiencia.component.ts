@@ -9,17 +9,12 @@ import { Experiencia } from 'src/app/modelos/Experiencia';
 })
 export class ExperienciaComponent implements OnInit {
   
-  experiencias : Experiencia[];
+  
   constructor(private serviexp : ServicioexperienciaService) { }
 
   ngOnInit(): void {
-    this.verExperiencia();
+   
   }
 
-  verExperiencia(){
-    this.serviexp.verExperiencia().subscribe(data => {
-        this.experiencias = data;
-    })
-  }
 
 }
