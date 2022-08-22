@@ -1,0 +1,26 @@
+<div class="container col-md-6">
+    <form action="">
+        <div class="form-group">
+            <label>titulo</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoestudio.titulo" name="titulo">
+        </div>
+        <div class="form-group">
+            <label for="">lugar</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoestudio.lugar" name="lugar">
+        </div>
+        <div class="form-group">
+            <label for="">inicio</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoestudio.ini_est" name="inicio">
+        </div>
+        <div class="form-group">
+            <label for="">fin</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoestudio.fin_est" name="fin">
+        </div>
+        <div class="form-group">
+            <label>imagen</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoestudio.imagen" name="imagen">
+        </div>
+        <button (click)="Guardar()">Guardar</button>
+    </form>
+
+</div>

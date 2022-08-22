@@ -20,12 +20,8 @@ export class SobreMiComponent implements OnInit {
 
   private obtenerPersona(){
     this.serviperso.verPersona().subscribe(data => {
-      console.log(data);
+
       this.personas = data;
-
-      
-      
-
     })
   }
 }

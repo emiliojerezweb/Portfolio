@@ -1,23 +1,18 @@
 <div class="container">
-    <h2>Estudios</h2>
-    <div class="row">
-        <div class=" xs-4 col-3 imgtitulo">
-            <img src="../../../assets/Logount2.webp" alt="icono" class="img-fluid"> 
-            <p class="estudio"><p>
-        </div>
-        <div class="xs-8 col-9 " id="estudio">
-            <p>Programador Universitario</p>
-            <p>1997-2001</p>
-        </div>
+    <div>
+        <h2>Estudios</h2>
+        <button routerLink="crearestudio">Crear</button>
     </div>
-    <div class="row">
-        <div class=" xs-4 col-3 imgtitulo">
-            <img src="../../../assets/Logotecnica.jpg" alt="icono" class="img-fluid"> 
-            <p class="estudio"><p>
-        </div>
-        <div class="xs-8 col-9 " id="estudio">
-            <p>Tecnico Electromecanico</p>
-            <p>1991-1996</p>
+    <div *ngFor="let estudio of estudios">
+        <div class="row">
+            <div class=" xs-4 col-3 imgtitulo">
+                <img src="../../../assets/{{estudio.imagen}}" alt="icono" class="img-fluid"> 
+            </div>
+            <div class="xs-8 col-9 " id="estudio">
+                <p>{{estudio.titulo}}</p>
+                <p>{{estudio.lugar}}</p>
+                <p>{{estudio.ini_est}}{{estudio.fin_est}}</p>
+            </div>
         </div>
     </div>
     <a href="">Volver al Inicio</a>

@@ -6,4 +6,5 @@ export class Persona {
         direccion: string;
         email: string;
         descripcion: string;
+        imagen: string;
 }

@@ -1,4 +1,4 @@
-import { Persona } from "./Persona";
+
 
 export class Estudios {
 
@@ -7,5 +7,5 @@ export class Estudios {
     lugar: string;
     ini_est: string;
     fin_est: string;
-    id_persona: Persona;
+    imagen: string;
 }

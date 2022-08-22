@@ -12,6 +12,7 @@ import { EstudiosComponent } from './componentes/estudios/estudios.component';
 import { CursosComponent } from './componentes/cursos/cursos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
+import { CrearestudioComponent } from './componentes/crearestudio/crearestudio.component';
 
 
 @NgModule({
@@ -24,6 +25,7 @@ import { FormsModule } from '@angular/forms';
     EstudiosComponent,
     CursosComponent,
     ContactoComponent,
+    CrearestudioComponent,
   ],
   imports: [
     BrowserModule,

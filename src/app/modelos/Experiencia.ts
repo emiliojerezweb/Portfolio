@@ -1,4 +1,4 @@
-import { Persona } from "./Persona";
+
 
 export class Experiencia {
    
@@ -8,5 +8,5 @@ export class Experiencia {
     tarea: string;
     fec_ini: string;
     fec_fin: string;
-    id_persona: Persona;
+    imagen: string;
 }

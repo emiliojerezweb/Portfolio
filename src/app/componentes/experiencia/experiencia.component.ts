@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ServicioexperienciaService } from 'src/app/servicios/servicioexperiencia.service';
 import { Experiencia } from 'src/app/modelos/Experiencia';
 
 @Component({
@@ -10,16 +9,10 @@ import { Experiencia } from 'src/app/modelos/Experiencia';
 export class ExperienciaComponent implements OnInit {
   
   experiencias : Experiencia[];
-  constructor(private serviexp : ServicioexperienciaService) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.verExperiencia();
-  }
 
-  verExperiencia(){
-    this.serviexp.verExperiencia().subscribe(data => {
-        this.experiencias = data;
-    })
   }
 
 }
