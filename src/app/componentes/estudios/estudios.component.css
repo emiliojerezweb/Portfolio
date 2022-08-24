@@ -29,6 +29,40 @@ img{
     height: 100px;
 }
 
+<<<<<<< HEAD
 
+=======
+.imgtitulo p .estudio{
+    padding: 0%;
+}
+#estudio p {
+    font-size: 20px;
+    font-weight: bold;
+}
+>>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
 
+h2{
+    margin-bottom: 20px;
+}
 
+.edicion{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.btn-outline-primary:hover{
+    background-color:rgb(201, 202, 233);
+    color:black;
+}
+.btn-outline-success:hover {
+    background-color:rgb(210, 245, 219);
+    color:black
+}
+.btn-outline-danger:hover{
+    background-color:rgb(248, 201, 201);
+    color: black;
+}
+button{
+    margin: 2px;
+    color:rgb(22, 21, 21);
+}

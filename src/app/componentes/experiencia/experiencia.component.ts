@@ -8,11 +8,21 @@ import { Experiencia } from 'src/app/modelos/Experiencia';
 })
 export class ExperienciaComponent implements OnInit {
   
+<<<<<<< HEAD
   experiencias : Experiencia[];
   constructor() { }
 
   ngOnInit(): void {
 
   }
+=======
+  
+  constructor(private serviexp : ServicioexperienciaService) { }
+
+  ngOnInit(): void {
+   
+  }
+
+>>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
 
 }

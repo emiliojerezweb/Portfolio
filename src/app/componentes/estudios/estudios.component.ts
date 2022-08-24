@@ -1,9 +1,14 @@
 
 import { Component, OnInit } from '@angular/core';
+<<<<<<< HEAD
 import { Router, RouterLink } from '@angular/router';
 import { Estudios } from 'src/app/modelos/Estudios';
 import { ServicioestudioService } from 'src/app/servicios/servicioestudio.service';
 import { EditarestudioComponent } from '../editarestudio/editarestudio.component';
+=======
+import { Estudios } from 'src/app/modelos/Estudios';
+import { ServicioestudiosService } from 'src/app/servicios/servicioestudios.service';
+>>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
 
 @Component({
   selector: 'app-estudios',
@@ -12,6 +17,7 @@ import { EditarestudioComponent } from '../editarestudio/editarestudio.component
 })
 export class EstudiosComponent implements OnInit {
 
+<<<<<<< HEAD
   estudios: Estudios[];
   
 
@@ -45,6 +51,22 @@ export class EstudiosComponent implements OnInit {
         alert('El estudio: ' + estudio.titulo + ' se elimino');
       });
     }
+=======
+  estudios : Estudios[];
+  constructor(private serviEstudio: ServicioestudiosService) { }
+
+  ngOnInit(): void {
+    this.obtenerEstudios();
+  }
+
+  obtenerEstudios(){
+    this.serviEstudio.verEstudios().subscribe(data =>
+      { 
+        this.estudios = data;
+        console.log(data); 
+      })
+  }
+>>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
 }
 
 
