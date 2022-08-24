@@ -1,7 +1,7 @@
 <div class="container">
     <div>
         <h2>Estudios</h2>
-        <button routerLink="crearestudio">Crear</button>
+        <button (click)="crearEstudio()">Crear</button>
     </div>
     <div *ngFor="let estudio of estudios">
         <div class="row">
@@ -11,8 +11,11 @@
             <div class="xs-8 col-9 " id="estudio">
                 <p>{{estudio.titulo}}</p>
                 <p>{{estudio.lugar}}</p>
-                <p>{{estudio.ini_est}}{{estudio.fin_est}}</p>
+                <p>{{estudio.ini_est}} - {{estudio.fin_est}}</p>
             </div>
+            <button (click)="editarEstudio(estudio)"> Editar</button>
+            <button (click)="borrarEstudio(estudio)"> Borrar</button>
+           
         </div>
     </div>
     <a href="">Volver al Inicio</a>

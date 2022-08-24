@@ -13,6 +13,8 @@ import { CursosComponent } from './componentes/cursos/cursos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
 import { CrearestudioComponent } from './componentes/crearestudio/crearestudio.component';
+import { EditarestudioComponent } from './componentes/editarestudio/editarestudio.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,12 +28,14 @@ import { CrearestudioComponent } from './componentes/crearestudio/crearestudio.c
     CursosComponent,
     ContactoComponent,
     CrearestudioComponent,
+    EditarestudioComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

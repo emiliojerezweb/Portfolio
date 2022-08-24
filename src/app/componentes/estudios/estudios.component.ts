@@ -1,8 +1,9 @@
 
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { Estudios } from 'src/app/modelos/Estudios';
 import { ServicioestudioService } from 'src/app/servicios/servicioestudio.service';
+import { EditarestudioComponent } from '../editarestudio/editarestudio.component';
 
 @Component({
   selector: 'app-estudios',
@@ -12,6 +13,8 @@ import { ServicioestudioService } from 'src/app/servicios/servicioestudio.servic
 export class EstudiosComponent implements OnInit {
 
   estudios: Estudios[];
+  
+
   constructor(private servicioEstudio: ServicioestudioService, private router: Router) { }
 
   ngOnInit(): void {
@@ -25,5 +28,26 @@ export class EstudiosComponent implements OnInit {
     })
   }
 
+  editarEstudio(estudio: Estudios){
+    localStorage.setItem("id", estudio.id.toString());
+    this.router.navigate(["/editarestudio"]);
+  }
+
+  crearEstudio(){
+    this.router.navigate(["/crearestudio"]);
+  }
+
+  borrarEstudio(estudio:Estudios){
+    const ok = confirm('borrar?');
+    if(ok){
+      this.servicioEstudio.eliminarEstudio(estudio).subscribe(data =>{
+        this.estudios = this.estudios.filter(e => e!==estudio);
+        alert('El estudio: ' + estudio.titulo + ' se elimino');
+      });
+    }
+}
+
 
 }
+
+
