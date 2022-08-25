@@ -1,20 +1,15 @@
 .container{
     border: solid 1px;
-    border-radius: 2%;
-    background-color:rgb(201, 202, 233);
+    border-radius: 5%;
+    background-color: rgb(228, 247, 222);
     padding-top: 20px;
 }
 
 button{
     margin: 10px;
 }
-
 h2{
     font-weight: bold;
     text-align: center;
     background-color: rgb(190,190,190);
 }
-#estudio{
-    font-weight: bold;
-}
-

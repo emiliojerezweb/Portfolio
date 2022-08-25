@@ -1,0 +1,42 @@
+<h2>Agregar experiencia</h2>
+<hr>
+<div class="container col-md-6">
+    <form action="">
+        <div class="form-group">
+            <label for="empresa">Empresa.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevaExp.empresa" name="empresa">
+        </div>
+        <div class="form-group">
+            <label for="puesto">Puesto.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevaExp.puesto" name="puesto">
+        </div>
+        <div class="form-group">
+            <label for="tarea">Tarea.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevaExp.tarea" name="tarea">
+        </div>
+        <div class="form-group">
+            <label for="inicio">Fecha de inicio.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevaExp.fec_ini" name="inicio">
+        </div>
+        <div class="form-group">
+            <label for="fin">Fecha de egreso.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevaExp.fec_fin" name="fin">
+        </div>
+        <button (click)="GuardarExp()" class="btn btn-outline-success"> <i class="bi bi-save-fill"></i> Guardar</button>
+        <button routerLink="/experiencia" class="btn btn-outline-danger" ><i class="bi bi-arrow-counterclockwise"></i> Cancelar</button>
+    </form>
+
+
+    <div class="row">
+        <div class=" xs-4 col-3 imgtitulo">
+            <img  src="../../../assets/Logotrabajo.png" alt="icono" class="img-fluid"> 
+        </div>
+        <div class="xs-8 col-9 " id="experiencia">
+            <p>{{nuevaExp.empresa}}</p>
+            <p>{{nuevaExp.puesto}}</p>
+            <p>{{nuevaExp.tarea}}</p>
+            <p>{{nuevaExp.fec_ini}} - {{nuevaExp.fec_fin}}</p>
+        </div>
+    </div>
+
+</div>

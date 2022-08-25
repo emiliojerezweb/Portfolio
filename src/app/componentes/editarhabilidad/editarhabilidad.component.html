@@ -1,0 +1,17 @@
+
+<h2>Editar curso o habilidad</h2>
+<hr>
+<div class="container col-md-6">
+    <form action="">
+        <div class="form-group">
+            <label for="nombre">Nombre.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevaHabilidad.nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="lugar">Descripcion.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevaHabilidad.descripcion" name="descripcion">
+        </div>
+        <button (click)="guardarHabilidad(nuevaHabilidad)" class="btn btn-outline-success"> <i class="bi bi-save-fill"></i> Guardar</button>
+        <button routerLink="/curso" class="btn btn-outline-danger" ><i class="bi bi-arrow-counterclockwise"></i> Cancelar</button>
+    </form>
+</div>

@@ -49,18 +49,6 @@ h2{
     flex-direction: row-reverse;
 }
 
-.btn-outline-primary:hover{
-    background-color:rgb(201, 202, 233);
-    color:black;
-}
-.btn-outline-success:hover {
-    background-color:rgb(210, 245, 219);
-    color:black
-}
-.btn-outline-danger:hover{
-    background-color:rgb(240, 187, 187);
-    color: black;
-}
 button{
     margin: 2px;
     color:rgb(22, 21, 21);

@@ -11,10 +11,10 @@
             <img src="../../../assets/{{exp.imagen}}" alt="icono" class="img-fluid"> 
         </div>
         <div class="xs-8 col-9 " id="experiencia">
-            <p>{{exp.empresa}}</p>
-            <p>{{exp.puesto}}</p>
+            <h3>{{exp.empresa}}</h3>
+            <h4>{{exp.puesto}}</h4>
             <p>{{exp.tarea}}</p>
-            <p>{{exp.fec_ini}} - {{exp.fec_fin}}</p>
+            <p>Desde: {{exp.fec_ini}} - Hasta: {{exp.fec_fin}}</p>
         </div>
         <div class="botones">
           <button (click)="editarExp(exp)" class="btn btn-outline-success" ><i class="bi bi-pencil-fill"></i> Editar</button>

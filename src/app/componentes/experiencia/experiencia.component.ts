@@ -11,8 +11,7 @@ import { ServicioexperienciaService } from 'src/app/servicios/servicioexperienci
 export class ExperienciaComponent implements OnInit {
   
   experiencias : Experiencia[];
-  valor: number;
- 
+  numero: number;
   
   constructor(private serviciosexp: ServicioexperienciaService, private router: Router) { }
 
@@ -28,21 +27,18 @@ export class ExperienciaComponent implements OnInit {
   
   editarExp(exp: Experiencia){
     localStorage.setItem("id", exp.id.toString());
-    this.router.navigate(["/creareditarexp"]);
+    this.router.navigate(["/editarexp"]);
   }
 
   crearExp(){
-    this.router.navigate(["/creareditarexp"]);
-    this.valor = 1;
-    console.log(this.valor);
-
+    this.router.navigate(["/crearexp"]);
   }
 
   borrarExp(exp:Experiencia){
     const ok = confirm('Desea eliminar esta experiencia?');
     if(ok){
       this.serviciosexp.eliminarExperiencia(exp).subscribe( data => {
-        this.experiencias = this.experiencias.filter( exp => exp!==exp);
+        this.experiencias = this.experiencias.filter( e => e!==exp);
         alert('Se elimino la experiencia.');
       });
     }

@@ -1,4 +1,4 @@
-<h2>{{frase}}</h2>
+<h2>Editar experiencia</h2>
 <hr>
 <div class="container col-md-6">
     <form action="">
@@ -12,7 +12,7 @@
         </div>
         <div class="form-group">
             <label for="inicio">Tarea.</label>
-            <input type="text" class="form-control" [(ngModel)]="nuevaExp.tarea" name="tarea">
+            <textarea type="text" class="form-control" [(ngModel)]="nuevaExp.tarea" name="tarea" rows="3"></textarea>
         </div>
         <div class="form-group">
             <label for="inicio">Fecha de inicio.</label>
@@ -22,8 +22,13 @@
             <label for="fin">Fecha de egreso.</label>
             <input type="text" class="form-control" [(ngModel)]="nuevaExp.fec_fin" name="fin">
         </div>
-        <button (click)="GuardarExp()" class="btn "> <i class="bi bi-save-fill"></i> Guardar</button>
-        <button routerLink="/experiencia" ><i class="bi bi-arrow-counterclockwise"></i> Cancelar</button>
+        <div class="form-group">
+            <label for="imagen">Imagen.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevaExp.imagen" name="Imagen">
+        </div>
+
+        <button (click)="guardarExp(nuevaExp)" class="btn btn-outline-success"> <i class="bi bi-save-fill"></i> Guardar</button>
+        <button routerLink="/experiencia" class="btn btn-outline-danger" ><i class="bi bi-arrow-counterclockwise"></i> Cancelar</button>
     </form>
 
 
@@ -40,3 +45,4 @@
     </div>
 
 </div>
+

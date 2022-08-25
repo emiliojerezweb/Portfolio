@@ -10,14 +10,17 @@ import { SobreMiComponent } from './componentes/sobre-mi/sobre-mi.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EstudiosComponent } from './componentes/estudios/estudios.component';
 import { CursosComponent } from './componentes/cursos/cursos.component';
-import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
 import { CrearestudioComponent } from './componentes/crearestudio/crearestudio.component';
 import { EditarestudioComponent } from './componentes/editarestudio/editarestudio.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { NuevoestudioComponent } from './estudios/nuevoestudio/nuevoestudio.component';
 import { EditarpersonaComponent } from './componentes/editarpersona/editarpersona.component';
-import { CreareditarexpComponent } from './componentes/creareditarexp/creareditarexp.component';
+import { EditarexperienciaComponent } from './componentes/editarexperiencia/editarexperiencia.component';
+import { CrearhabilidadComponent } from './componentes/crearhabilidad/crearhabilidad.component';
+import { EditarhabilidadComponent } from './componentes/editarhabilidad/editarhabilidad.component';
+import { CrearexperienciasComponent } from './componentes/crearexperiencias/crearexperiencias.component';
+import { FooterComponent } from './componentes/footer/footer.component';
+
 
 
 
@@ -30,12 +33,14 @@ import { CreareditarexpComponent } from './componentes/creareditarexp/crearedita
     ExperienciaComponent,
     EstudiosComponent,
     CursosComponent,
-    ContactoComponent,
     CrearestudioComponent,
     EditarestudioComponent,
-    NuevoestudioComponent,
     EditarpersonaComponent,
-    CreareditarexpComponent,
+    EditarexperienciaComponent,
+    CrearhabilidadComponent,
+    EditarhabilidadComponent,
+    CrearexperienciasComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,21 @@
 <div class="container">
-    <h2>Cursos y capacitaciones</h2>
-    <div class="card" style="width: 18rem;">
-      <img src="../../../assets/logoangular.png" class="card-img-top" alt="...">
-      <div class="card-body">
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  <div class="cabecera">
+      <h2>Cursos, capacitaciones y habilidades</h2>
+      <a href="portfolio"><i class="bi bi-house-fill"></i></a>
+  </div>
+  <hr>
+      <button (click)="crearHabilidad()" class=" btn btn-outline-primary"><i class="bi bi-file-earmark-plus-fill"></i> Agregar</button>
+  <div *ngFor="let habil of habilidad">
+      <div class="row">
+          <div class="xs-8 col-9 " id="">
+              <h3>{{habil.nombre}}</h3>
+              <hr>
+              <p>{{habil.descripcion}}</p>
+          </div>
+          <div class="botones">
+            <button (click)="editarHabilidad(habil)" class="btn btn-outline-success"><i class="bi bi-pencil-fill"></i> Editar</button>
+            <button (click)="borrarHabilidad(habil)" class="btn btn-outline-danger"><i class="bi bi-x-circle-fill"></i> Borrar</button>
+          </div>
       </div>
-    </div>
-    <a href=""><i class="bi bi-arrow-up-short">Volver al Inicio</i></a>
+  </div>
 </div>

@@ -1,29 +1,36 @@
-.container{
-    padding-top: 30px;
-    width: 70%;
-    border: 10px;
+.card{
+    margin: 30px;
 }
 
-h2{
-    padding-bottom: 30px;
-}
-li{
-    font-size: 30px;
+.card-header{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
 }
 
 
-img{
-    width: 50%;
-    height: 300px;
-}
-
-.carousel-item{
-    border: solid 2px;
-    border-radius: 5%;
+button{
+    margin: 2px;
+    color:rgb(22, 21, 21);
 }
 
 a{
-    font-size: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: rgb(87, 86, 86);
+}
+.row{
+    padding: 15px;
+    border: solid 1px;
+    padding:10px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(250, 227, 227);
+}
+h3{
+    font-size: 15px;
     font-weight: bold;
-    padding: 20px;
 }

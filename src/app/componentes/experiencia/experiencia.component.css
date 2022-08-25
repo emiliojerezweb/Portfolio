@@ -18,6 +18,9 @@ a{
 }
 
 button{
-    margin: 2px;
+    margin: 10px;
     color:rgb(22, 21, 21);
+}
+h3{
+    font-weight: bold;
 }

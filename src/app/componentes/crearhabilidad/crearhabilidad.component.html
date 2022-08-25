@@ -1,0 +1,19 @@
+<h2>Agregar habilidad</h2>
+<hr>
+<div class="container col-md-6">
+    <form action="">
+        <div class="form-group">
+            <label for="nombre">Nombre.</label>
+            <input type="text" class="form-control" 
+                    [(ngModel)]="nuevaHabilidad.nombre" name="nombre">
+        </div>
+        <div class="form-group">
+            <label for="descripcion">Descripcion.</label>
+            <textarea class="form-control" 
+                    [(ngModel)]="nuevaHabilidad.descripcion" name="descripcion"
+                    row="3"></textarea>
+        </div>
+        <button (click)="guardarHabilidad()" class="btn btn-outline-success"> <i class="bi bi-save-fill"></i> Guardar</button>
+        <button routerLink="/curso" class="btn btn-outline-danger" ><i class="bi bi-arrow-counterclockwise"></i> Cancelar</button>
+    </form>
+</div>

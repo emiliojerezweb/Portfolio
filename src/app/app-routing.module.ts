@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ContactoComponent } from './componentes/contacto/contacto.component';
-import { CreareditarexpComponent } from './componentes/creareditarexp/creareditarexp.component';
 import { CrearestudioComponent } from './componentes/crearestudio/crearestudio.component';
+import { CrearexperienciasComponent } from './componentes/crearexperiencias/crearexperiencias.component';
+import { CrearhabilidadComponent } from './componentes/crearhabilidad/crearhabilidad.component';
 import { CursosComponent } from './componentes/cursos/cursos.component';
 import { EditarestudioComponent } from './componentes/editarestudio/editarestudio.component';
+import { EditarexperienciaComponent } from './componentes/editarexperiencia/editarexperiencia.component';
+import { EditarhabilidadComponent } from './componentes/editarhabilidad/editarhabilidad.component';
 import { EditarpersonaComponent } from './componentes/editarpersona/editarpersona.component';
 import { EstudiosComponent } from './componentes/estudios/estudios.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
@@ -17,11 +19,13 @@ const routes: Routes = [
   {path:'estudios', component: EstudiosComponent},
   {path:'experiencia', component: ExperienciaComponent},
   {path:'curso', component: CursosComponent},
-  {path:'contacto', component:ContactoComponent},
   {path:'crearestudio', component: CrearestudioComponent},
   {path:'editarestudio', component: EditarestudioComponent},
   {path:'editarpersona', component: EditarpersonaComponent},
-  {path:'creareditarexp', component: CreareditarexpComponent}
+  {path:'crearexp', component: CrearexperienciasComponent},
+  {path: 'editarexp', component: EditarexperienciaComponent},
+  {path: 'editarhabil', component: EditarhabilidadComponent},
+  {path: 'crearhabil', component: CrearhabilidadComponent}
 ];
 
 @NgModule({

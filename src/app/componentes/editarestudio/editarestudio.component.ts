@@ -31,7 +31,7 @@ export class EditarestudioComponent implements OnInit {
     this.servicioEstudio.editarEstudio(estudio).subscribe( data =>
       {
         this.nuevoEstudio = data;
-        this.router.navigate(["/estudios"]);
+        this.router.navigate(["/experiencia"]);
       })
   }
 }
