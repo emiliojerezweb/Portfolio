@@ -1,22 +1,25 @@
+<h2>Agregar estudio</h2>
+<hr>
 <div class="container col-md-6">
     <form action="">
         <div class="form-group">
-            <label for="titulo">titulo</label>
+            <label for="titulo">Titulo.</label>
             <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.titulo" name="titulo">
         </div>
         <div class="form-group">
-            <label for="lugar">lugar</label>
+            <label for="lugar">Establecimiento.</label>
             <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.lugar" name="lugar">
         </div>
         <div class="form-group">
-            <label for="inicio">inicio</label>
+            <label for="inicio">Año de inicio.</label>
             <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.ini_est" name="inicio">
         </div>
         <div class="form-group">
-            <label for="fin">fin</label>
+            <label for="fin">Año de egreso.</label>
             <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.fin_est" name="fin">
         </div>
-        <button (click)="Guardar()">Guardar</button>
+        <button (click)="Guardar()" class="btn btn-outline-success"> <i class="bi bi-save-fill"></i> Guardar</button>
+        <button routerLink="/estudios" class="btn btn-outline-danger" ><i class="bi bi-arrow-counterclockwise"></i> Cancelar</button>
     </form>
     <div class="row">
         <div class=" xs-4 col-3 imgtitulo">

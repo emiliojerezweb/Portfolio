@@ -1,9 +1,10 @@
 <div class="container">
-<<<<<<< HEAD
-    <div>
+    <div class="cabecera">
         <h2>Estudios</h2>
-        <button (click)="crearEstudio()">Crear</button>
+        <a href="portfolio"><i class="bi bi-house-fill"></i></a>
     </div>
+    <hr>
+        <button (click)="crearEstudio()" class=" btn btn-outline-primary"><i class="bi bi-file-earmark-plus-fill"></i> Agregar</button>
     <div *ngFor="let estudio of estudios">
         <div class="row">
             <div class=" xs-4 col-3 imgtitulo">
@@ -14,35 +15,10 @@
                 <p>{{estudio.lugar}}</p>
                 <p>{{estudio.ini_est}} - {{estudio.fin_est}}</p>
             </div>
-            <button (click)="editarEstudio(estudio)"> Editar</button>
-            <button (click)="borrarEstudio(estudio)"> Borrar</button>
-           
+            <div class="botones">
+              <button (click)="editarEstudio(estudio)" class="btn btn-outline-success"><i class="bi bi-pencil-fill"></i> Editar</button>
+              <button (click)="borrarEstudio(estudio)" class="btn btn-outline-danger"><i class="bi bi-x-circle-fill"></i> Borrar</button>
+            </div>
         </div>
     </div>
-    <a href="">Volver al Inicio</a>
-=======
-  <h2>Estudios</h2>
-  <div class="edicion">
-    <button type="button" class="btn btn-outline-success">Crear</button>
-  </div>
-  <div *ngFor="let estudio of estudios">
-    <div class="row">
-      <div class=" xs-4 col-3 imgtitulo">
-        <img src="../../../assets/{{estudio.imagen}}" alt="icono" class="img-fluid">
-        <p class="estudio">
-          <p>
-      </div>
-      <div class="xs-8 col-9 " id="estudio">
-        <p><strong>{{estudio.titulo}}</strong></p>
-        <p>{{estudio.lugar}}</p>
-        <p>{{estudio.ini_est}} - {{estudio.fin_est}}</p>
-        <button type="button" class="btn btn-outline-primary">Editar</button>
-        <button type="button" class="btn btn-outline-danger">Borrar</button>
-      </div>
-      
-    </div>
-  </div>
-  <br>
-  <a href="">Volver al Inicio</a>
->>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
 </div>

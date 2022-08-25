@@ -3,6 +3,7 @@ import { Persona } from '../../modelos/Persona';
 
 
 import { ServiciopersonaService } from 'src/app/servicios/serviciopersona.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sobre-mi',
@@ -12,7 +13,8 @@ import { ServiciopersonaService } from 'src/app/servicios/serviciopersona.servic
 export class SobreMiComponent implements OnInit {
 
   personas: Persona[];
-  constructor(private serviperso: ServiciopersonaService) { }
+  constructor(private serviperso: ServiciopersonaService,
+              private router: Router) { }
 
   ngOnInit(): void {
     this.obtenerPersona();
@@ -20,11 +22,14 @@ export class SobreMiComponent implements OnInit {
 
   private obtenerPersona(){
     this.serviperso.verPersona().subscribe(data => {
-<<<<<<< HEAD
-
-=======
->>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
       this.personas = data;
+
     })
+  }
+  
+  editarMe(persona:Persona){
+    localStorage.setItem("id", persona.id.toString());
+    console.log(persona);
+    this.router.navigate(['/editarpersona'])
   }
 }

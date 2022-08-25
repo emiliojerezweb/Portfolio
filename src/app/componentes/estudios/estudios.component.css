@@ -6,6 +6,7 @@
     margin: 5px;
     border-radius: 10px;
     width: 100%;
+    background-color: rgb(250, 227, 227);
 }
 
 h3{
@@ -29,9 +30,7 @@ img{
     height: 100px;
 }
 
-<<<<<<< HEAD
 
-=======
 .imgtitulo p .estudio{
     padding: 0%;
 }
@@ -39,7 +38,7 @@ img{
     font-size: 20px;
     font-weight: bold;
 }
->>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
+
 
 h2{
     margin-bottom: 20px;
@@ -59,10 +58,18 @@ h2{
     color:black
 }
 .btn-outline-danger:hover{
-    background-color:rgb(248, 201, 201);
+    background-color:rgb(240, 187, 187);
     color: black;
 }
 button{
     margin: 2px;
     color:rgb(22, 21, 21);
 }
+
+a{
+    font-size: 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: rgb(87, 86, 86);
+}
+

@@ -12,13 +12,13 @@ import { EstudiosComponent } from './componentes/estudios/estudios.component';
 import { CursosComponent } from './componentes/cursos/cursos.component';
 import { ContactoComponent } from './componentes/contacto/contacto.component';
 import { FormsModule } from '@angular/forms';
-<<<<<<< HEAD
 import { CrearestudioComponent } from './componentes/crearestudio/crearestudio.component';
 import { EditarestudioComponent } from './componentes/editarestudio/editarestudio.component';
 import { ReactiveFormsModule } from '@angular/forms';
-=======
 import { NuevoestudioComponent } from './estudios/nuevoestudio/nuevoestudio.component';
->>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
+import { EditarpersonaComponent } from './componentes/editarpersona/editarpersona.component';
+import { CreareditarexpComponent } from './componentes/creareditarexp/creareditarexp.component';
+
 
 
 @NgModule({
@@ -31,12 +31,11 @@ import { NuevoestudioComponent } from './estudios/nuevoestudio/nuevoestudio.comp
     EstudiosComponent,
     CursosComponent,
     ContactoComponent,
-<<<<<<< HEAD
     CrearestudioComponent,
     EditarestudioComponent,
-=======
     NuevoestudioComponent,
->>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
+    EditarpersonaComponent,
+    CreareditarexpComponent,
   ],
   imports: [
     BrowserModule,

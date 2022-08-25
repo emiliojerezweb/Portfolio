@@ -1,17 +1,23 @@
 <div class="container">
-  <div class="row">
+  <div class="cabecera">
     <h2>Sobre mi...</h2>
+    <a href="portfolio"><i class="bi bi-house-fill"></i></a>
+  </div>
+  <hr>
+  <div class="row">
     <div class=" col-sm-8 col-lg-3">
-      <img src="../../../assets/soyyo.jpg" alt="icono" class="img-fluid">
+      <img src="../../../assets/{{personas[0].imagen}}" alt="icono" class="img-fluid">
     </div>
     <div class="col-sm-6 col-lg-3 nombre">
       <h4>{{personas[0].nombre}} {{personas[0].apellido}}</h4>
       <p><b>Programador Universitario</b></p>
+      <p>{{personas[0].direccion}}</p>
     </div>
     <div class="col-sm-12 col-lg-6">
       <p>{{personas[0].descripcion}}</p>
     </div>
   </div>
-  <br>
-  <a href="">Volver al Inicio</a>
+  <div class="container">
+    <button (click)="editarMe(personas[0])" class="btn btn-outline-success"> <i class="bi bi-pencil-fill"></i>  Editar </button>
+  </div>
 </div>

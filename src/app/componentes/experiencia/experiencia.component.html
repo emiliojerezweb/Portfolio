@@ -1,50 +1,25 @@
 <div class="container">
-  <h2 class="titulo">Experiencia Laboral</h2>
-  <div class="row">
-      <div class=" xs-4 col-3">
-        <img src="../../../assets/LogoGarba.png" alt="icono" class="img-fluid">
-      </div>
-      <div class="col-9">
-        <h3>Garbarino</h3>
-        <p>Polivalente</p>
-        <p>2011 al 2021</p>
-        <p>Todo lo relacionado a cajas y creditos</p>
-      </div>
+  <div class="cabecera">
+    <h2>Experiencia Laboral</h2>
+    <a href="portfolio"><i class="bi bi-house-fill"></i></a>
   </div>
-  <div class="row">
-    <div class=" xs-4 col-3">
-      <img src="../../../assets/LogoLuque.jpg" alt="icono" class="img-fluid">
-    </div>
-    <div class="col-9">
-      <h3>Emilio Luque</h3>
-      <p>Jefe de cajas</p>
-      <p>2007 al 2011</p>
-      <p>Todo lo relacionado a cajas y creditos</p>
-    </div>
-</div>
-<div class="row">
-    <div class=" xs-4 col-3">
-      <img src="../../../assets/Logocti.webp" alt="icono" class="img-fluid">
-    </div>
-    <div class="col-9">
-      <h3>CTI movil</h3>
-      <p>Referente</p>
-      <p>2004 al 2007</p>
-      <p>Encargado de sucursal</p>
+  <hr>
+  <button (click)="crearExp()" class="btn btn-outline-primary"><i class="bi bi-file-earmark-plus"></i> Agregar</button>
+  <div *ngFor="let exp of experiencias">
+    <div class="row">
+        <div class=" xs-4 col-3 imgexp">
+            <img src="../../../assets/{{exp.imagen}}" alt="icono" class="img-fluid"> 
+        </div>
+        <div class="xs-8 col-9 " id="experiencia">
+            <p>{{exp.empresa}}</p>
+            <p>{{exp.puesto}}</p>
+            <p>{{exp.tarea}}</p>
+            <p>{{exp.fec_ini}} - {{exp.fec_fin}}</p>
+        </div>
+        <div class="botones">
+          <button (click)="editarExp(exp)" class="btn btn-outline-success" ><i class="bi bi-pencil-fill"></i> Editar</button>
+          <button (click)="borrarExp(exp)" class="btn btn-outline-danger"><i class="bi bi-x-circle-fill"></i> Borrar</button>
+        </div>
     </div>
 </div>
-<div class="row">
-    <div class=" xs-4 col-3">
-      <img src="../../../assets/Logotrabajo.png" alt="icono" class="img-fluid">
-    </div>
-    <div class="col-9">
-      <h3>Moonmate</h3>
-      <p>Jefe de expedicion</p>
-      <p>2003 al 2004</p>
-      <p>Encargado de expedicion</p>
-    </div>
-</div>  
- 
-
-  <a href="">Volver al Inicio</a>
 </div>

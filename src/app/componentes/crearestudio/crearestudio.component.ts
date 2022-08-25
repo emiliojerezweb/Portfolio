@@ -9,7 +9,7 @@ import { ServicioestudioService } from 'src/app/servicios/servicioestudio.servic
   styleUrls: ['./crearestudio.component.css']
 })
 export class CrearestudioComponent implements OnInit {
-
+  
   nuevoEstudio: Estudios = new Estudios();
 
   constructor(private router: Router, private servicioEstudio: ServicioestudioService) { }

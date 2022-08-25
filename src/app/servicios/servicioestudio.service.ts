@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { EventEmitter, Injectable, Output } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Estudios } from '../modelos/Estudios';
 
@@ -7,8 +7,6 @@ import { Estudios } from '../modelos/Estudios';
   providedIn: 'root'
 })
 export class ServicioestudioService {
-
-  @Output() estudioEnviado: EventEmitter<Estudios> = new EventEmitter();
 
   constructor(private http: HttpClient) { }
 

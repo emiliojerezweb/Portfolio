@@ -1,14 +1,10 @@
 
 import { Component, OnInit } from '@angular/core';
-<<<<<<< HEAD
 import { Router, RouterLink } from '@angular/router';
-import { Estudios } from 'src/app/modelos/Estudios';
-import { ServicioestudioService } from 'src/app/servicios/servicioestudio.service';
-import { EditarestudioComponent } from '../editarestudio/editarestudio.component';
-=======
-import { Estudios } from 'src/app/modelos/Estudios';
-import { ServicioestudiosService } from 'src/app/servicios/servicioestudios.service';
->>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
+import { Estudios } from 'src/app/modelos/Estudios';import { ServicioestudioService } from 'src/app/servicios/servicioestudio.service';
+;
+
+
 
 @Component({
   selector: 'app-estudios',
@@ -17,10 +13,8 @@ import { ServicioestudiosService } from 'src/app/servicios/servicioestudios.serv
 })
 export class EstudiosComponent implements OnInit {
 
-<<<<<<< HEAD
   estudios: Estudios[];
   
-
   constructor(private servicioEstudio: ServicioestudioService, private router: Router) { }
 
   ngOnInit(): void {
@@ -29,7 +23,6 @@ export class EstudiosComponent implements OnInit {
 
   private verEstudios(){
     this.servicioEstudio.verEstudios().subscribe(data => {
-      console.log(data);
       this.estudios = data;
     })
   }
@@ -44,32 +37,14 @@ export class EstudiosComponent implements OnInit {
   }
 
   borrarEstudio(estudio:Estudios){
-    const ok = confirm('borrar?');
+    const ok = confirm('Desea eliminar el estudio?');
     if(ok){
       this.servicioEstudio.eliminarEstudio(estudio).subscribe(data =>{
         this.estudios = this.estudios.filter(e => e!==estudio);
-        alert('El estudio: ' + estudio.titulo + ' se elimino');
+        alert('El estudio se elimino');
       });
     }
-=======
-  estudios : Estudios[];
-  constructor(private serviEstudio: ServicioestudiosService) { }
-
-  ngOnInit(): void {
-    this.obtenerEstudios();
   }
-
-  obtenerEstudios(){
-    this.serviEstudio.verEstudios().subscribe(data =>
-      { 
-        this.estudios = data;
-        console.log(data); 
-      })
-  }
->>>>>>> 1aecd8e640803ef3ace47dc3a1ef68b3becccf4d
-}
-
-
 }
 
 

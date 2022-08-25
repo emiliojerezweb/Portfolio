@@ -23,3 +23,10 @@ a{
 a:hover{
     background-color: rgb(188, 253, 188);
 }
+
+.nav-item{
+    margin-top: 10px;
+}
+button{
+    margin-bottom: 10px;
+}

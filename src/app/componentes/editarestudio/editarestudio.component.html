@@ -1,28 +1,30 @@
-
+<h2>Edicion de estudio</h2>
+<hr>
 <div class="container col-md-6">
     <form action="">
         <div class="form-group">
-            <label for="titulo">titulo</label>
-            <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.titulo" name="titulo" >
+            <label for="titulo">Titulo.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.titulo" name="titulo" 
+             maxlength="30">
         </div>
         <div class="form-group">
-            <label for="">lugar</label>
-            <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.lugar" name="lugar" >
+            <label for="lugar">Establecimiento</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.lugar" name="lugar" maxlength="30">
         </div>
         <div class="form-group">
-            <label for="">inicio</label>
-            <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.ini_est" name="inicio">
+            <label for="">Año de inicio.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.ini_est" name="inicio" maxlength="4">
         </div>
         <div class="form-group">
-            <label for="">fin</label>
-            <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.fin_est" name="fin">
+            <label for="">Año de Egreso.</label>
+            <input type="text" class="form-control" [(ngModel)]="nuevoEstudio.fin_est" name="fin" maxlength="4">
         </div>
         <div class="form-group">
-            <label>imagen</label>
-            <input class="form-control" type="file" id="formFile"[(ngModel)]="nuevoEstudio.imagen" name="imagen">
+            <label for="imagen">Imagen.</label>
+            <input class="form-control" type="text" [(ngModel)]="nuevoEstudio.imagen" name="imagen">
         </div>
-        <button (click)="guardarCambios(nuevoEstudio)">Guardar</button>
-        <button routerLink="/estudios" >Cancelar</button>
+        <button (click)="guardarCambios(nuevoEstudio)" class="btn btn-outline-success"> <i class="bi bi-save-fill"></i> Guardar</button>
+        <button routerLink="/estudios" class="btn btn-outline-danger"><i class="bi bi-arrow-counterclockwise"></i> Cancelar</button>
     </form>
 
     <div class="row">
